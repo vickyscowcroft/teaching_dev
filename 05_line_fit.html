@@ -13111,7 +13111,7 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">data</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_excel</span><span class="p">(</span><span class="s1">&#39;./data/BoltData.xlsx&#39;</span><span class="p">,</span> 
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">data</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_excel</span><span class="p">(</span><span class="s1">&#39;BoltData.xlsx&#39;</span><span class="p">,</span> 
                         <span class="n">names</span><span class="o">=</span><span class="p">(</span><span class="s1">&#39;distance&#39;</span><span class="p">,</span> <span class="s1">&#39;err_distance&#39;</span><span class="p">,</span> <span class="s1">&#39;time&#39;</span><span class="p">,</span> <span class="s1">&#39;err_time&#39;</span><span class="p">),</span> 
                         <span class="n">usecols</span><span class="o">=</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">),</span> 
                         <span class="n">nrows</span><span class="o">=</span><span class="mi">11</span><span class="p">)</span>
@@ -13349,6 +13349,18 @@ height=367
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<div class="w3-panel w3-leftbar w3-border-yellow w3-pale-yellow w3-padding-small">
+    <h3 id="-Make-your-final-plot%20"><i class="fa fa-pencil-square-o"></i> Make your final plot
+</h3>
+    <p>Edit the code so that the best fit line is a different colour and the legend is in a different place. Information about how to change the legend can be found <a href="https://matplotlib.org/3.1.1/tutorials/intermediate/legend_guide.html">here</a></p>
+<p><a href="./05_line_fit-soln.html#-Make-your-final-plot%20">solution</a></p>
+</div>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Saving-the-plot-to-a-file">Saving the plot to a file<a class="anchor-link" href="#Saving-the-plot-to-a-file">&#182;</a></h2><p>The last thing we need to do is save our plot. <strong>Be careful!</strong> You won't get a warning if you're going to overwrite an existing file, so make sure to give your figure a new name.</p>
 
 </div>
@@ -13356,7 +13368,7 @@ height=367
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[6]:</div>
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">fig</span><span class="o">.</span><span class="n">savefig</span><span class="p">(</span><span class="s1">&#39;fancy.png&#39;</span><span class="p">,</span> <span class="n">dpi</span><span class="o">=</span><span class="mi">300</span><span class="p">)</span> 
